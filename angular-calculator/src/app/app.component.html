@@ -1,0 +1,84 @@
+<div class="container-fluid">
+      <div class=" row subcontainer">
+                  <div class="row calculator-head m-0">
+                    <div class="row">
+                        <p id="history" >{{history}}</p>
+                    </div>
+                    <div class="row">
+                      <input type="text" id="input"  [(ngModel)]="input" readonly="readonly">
+                    </div>
+                  </div>
+                  <div class="row calculator-end m-0">
+                      <div class="col-10">
+                          <div class="row add-btn-row">
+                            <div class="col">
+                              <input type="button" value="9" (click)="add('9')">
+                            </div>
+                            <div class="col">
+                              <input type="button" value="8" (click)="add('8')">
+                            </div>
+                            <div class="col">
+                              <input type="button" value="7" (click)="add('7')">
+                            </div>
+                          </div>
+
+                          <div class="row add-btn-row">
+                            <div class="col">
+                              <input type="button" value="6" (click)="add('6')">
+                            </div>
+                            <div class="col">
+                              <input type="button" value="5" (click)="add('5')">
+                            </div>
+                            <div class="col">
+                              <input type="button" value="4" (click)="add('4')">
+                            </div>
+                          </div>
+
+                          <div class="row add-btn-row">
+                            <div class="col">
+                              <input type="button" value="3" (click)="add('3')">
+                            </div>
+                            <div class="col">
+                              <input type="button" value="2" (click)="add('2')">
+                            </div>
+                            <div class="col">
+                              <input type="button" value="1" (click)="add('1')">
+                            </div>
+                          </div>
+
+                          <div class="row add-btn-row">
+                            <div class="col">
+                              <input type="button" value="." (click)="add('.')">
+                            </div>
+                            <div class="col">
+                              <input type="button" value="0" (click)="add('0')">
+                            </div>
+                            <div class="col">
+                              <input type="button" value="00" (click)="add('00')">
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="row op-btn-row">
+                            <input type="button" value="DEL" (click)="deleteValue()">
+                          </div>
+                          <div class="row op-btn-row">
+                            <input type="button" value="/" (click)="makeMove('/')">
+                          </div>
+                          <div class="row op-btn-row">
+                            <input type="button" value="*" (click)="makeMove('*')">
+                          </div>
+                          <div class="row op-btn-row">
+                            <input type="button" value="-" (click)="makeMove('-')">
+                          </div>
+                          <div class="row op-btn-row">
+                            <input type="button" value="+" (click)="makeMove('+')">
+                          </div>
+                          <div class="row op-btn-row">
+                            <input type="button" value="=" (click)="resolve()">                          </div>
+                      </div>
+
+                </div>
+      </div>
+</div>
+<router-outlet></router-outlet>
