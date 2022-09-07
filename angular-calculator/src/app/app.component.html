@@ -1,5 +1,6 @@
-<div class="container-fluid">
-      <div class=" row subcontainer">
+<div
+            class="d-flex  text-light align-items-center justify-content-center  ">
+             <div class="row subcontainer">
                   <div class="row calculator-head m-0">
                     <div class="row">
                         <p id="history" >{{history}}</p>
@@ -59,7 +60,7 @@
                           </div>
                       </div>
                       <div class="col">
-                          <div class="row op-btn-row">
+                          <div class="row op-btn-row op-del">
                             <input type="button" value="DEL" (click)="deleteValue()">
                           </div>
                           <div class="row op-btn-row">
@@ -74,7 +75,7 @@
                           <div class="row op-btn-row">
                             <input type="button" value="+" (click)="makeMove('+')">
                           </div>
-                          <div class="row op-btn-row">
+                          <div class="row op-btn-row op-r">
                             <input type="button" value="=" (click)="resolve()">                          </div>
                       </div>
 

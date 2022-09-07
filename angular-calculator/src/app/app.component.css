@@ -1,6 +1,7 @@
 #history {
   height: 10px;
   text-align: end;
+  color: black;
 }
 
 .subcontainer {
@@ -9,8 +10,6 @@
   text-align: center;
   margin-top: 10%;
   background-color: white;
-  margin-left:30%;
-  margin-right:30%;
 }
 
 input {
@@ -29,7 +28,15 @@ input {
 }
 
 .op-btn-row input {
-  color: cyan;
+  color: cornflowerblue;
+}
+
+.op-r input {
+  color:darkorange
+}
+
+.op-del input{
+  color: firebrick;
 }
 
 .add-btn-row {
@@ -46,6 +53,7 @@ input {
   font-size: 20px;
   text-align: end;
 }
+
 
 
 
